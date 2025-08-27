@@ -4,7 +4,6 @@ using UnityEngine;
 public class CameraAspectFitter : MonoBehaviour
 {
     public SpriteRenderer targetSprite; // Assign your sprite here
-    private bool hasPaused = false;
     private Camera cam;
     private Vector2 lastScreenSize;
 

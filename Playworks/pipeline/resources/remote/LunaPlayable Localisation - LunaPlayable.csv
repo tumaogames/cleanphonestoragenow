@@ -341,6 +341,7 @@ Animations_PerAnimationSettings,Per-animation settings,Настройки ани
 Animations_HalfPrecision,Store animation in Half-precision floating-point format ,Формат с плавающей точкой половинной точности,以半精度浮点格式存储动画
 Animations_HalfPrecisionShort,Use half-precision floats,Число половинной точности,使用半精度浮点数
 Animations_OverrideSettings,{0} Animation settings,{0} Настройки анимации,{0} 动画设置
+Animations_StripCurves,Remove redundant keyframes,Удалять избыточные ключи анимации,Remove redundant keyframes
 ShadersTab_DevelopShadersCount,Develop build shader variants total count,Количество найденных вариантов шейдеров в сборке develop,Develop 版本着色器变体总数
 ,,,
 Code_DiagnosticsTab,Diagnostics,Диагностика,诊断
@@ -1015,3 +1016,6 @@ LunaDevTab_ReloadConfigs_Hint,LunaDevTab_ReloadConfigs_Hint,LunaDevTab_ReloadCon
 LunaDevTab_ReloadAllResources_Hint,LunaDevTab_ReloadAllResources_Hint,LunaDevTab_ReloadAllResources_Hint,LunaDevTab_ReloadAllResources_Hint
 LunaDevTab_UpdateRemoteResources_Hint,LunaDevTab_UpdateRemoteResources_Hint,LunaDevTab_UpdateRemoteResources_Hint,LunaDevTab_UpdateRemoteResources_Hint
 LunaDevTab_CheckDocLinks_Hint,LunaDevTab_CheckDocLinks_Hint,LunaDevTab_CheckDocLinks_Hint,LunaDevTab_CheckDocLinks_Hint
+,,,
+Basic_ProjectSettings_StaticBatching,Static Batching,Статический Батчинг,Static Batching
+Basic_ProjectSettings_StaticBatching_Hint,"Static Batching is an optimization technique used in rendering to reduce draw call overhead by combining static GameObjects into a single mesh. This allows multiple objects that share the same material to be rendered in a single draw call, improving rendering performance.","Статический Батчинг - это метод оптимизации, используемый при рендеринге для уменьшения кол-ва вызовов отрисовки путем объединения мешей статических объектов в один меш.","Static Batching is an optimization technique used in rendering to reduce draw call overhead by combining static GameObjects into a single mesh. This allows multiple objects that share the same material to be rendered in a single draw call, improving rendering performance."

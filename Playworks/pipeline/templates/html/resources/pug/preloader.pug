@@ -7,8 +7,6 @@ if preloader && preloader.active
             span.preloader__luna__logo
                 if preloader.logo
                     img.preloader__logo(id="asset/preloader/logo", src=preloader.logo)
-                else
-                    include ../img/logo.svg
 
             .preloader__wrapper(class="wrapper")
                 img.preloader__icon(id="asset/preloader/icon", src=preloader.icon, class="wrapper")

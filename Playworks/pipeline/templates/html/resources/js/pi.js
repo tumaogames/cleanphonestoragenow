@@ -132,6 +132,7 @@
         this.statsUrl = statsUrl;
         this.configUrl = configUrl;
         this.errorEndpointUrl = errorEndpointUrl;
+        this.interactionCount = 0;
 
         const currentNow = now();
 
@@ -495,6 +496,8 @@
          * Logs interaction event, but only once.
          */
         onInteraction: function( event ) {
+            this.interactionCount++;
+
             if ( this.isEventLogged( PlayableInsights.FRAME_EVENT_NAME, 1 ) && !this.isEventLogged( PlayableInsights.INTERACTION_EVENT_NAME, 1 ) ) {
                 this.captureInteractionEventData( event );
                 this.logInteraction( event );
@@ -628,6 +631,10 @@
                     // update frameTimestamp if it's a frame event
                     if ( eventName === PlayableInsights.FRAME_EVENT_NAME ) {
                         this.frameTimestamp = time;
+                    }
+
+                    if ( eventName === PlayableInsights.SAMPLE_EVENT_NAME ) {
+                        json.interactionCount = this.interactionCount;
                     }
 
                     // update timestampSinceFrame field, falling back to -1 if the frame timestamp is in the future

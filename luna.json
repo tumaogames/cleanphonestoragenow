@@ -1,14 +1,14 @@
 {
-    "version": "6.3.0",
+    "version": "6.4.0",
     "projectId": "25cf7bcc16a03234c9bd68200ba66e30",
-    "applicationID": 31087,
+    "applicationID": 30032,
     "creativeName": "",
     "pgServer": "EU",
     "window": {
-        "‐″": true
+        "‐′": true
     },
     "unity": {
-        "environmentID": 1145263631,
+        "environmentID": 1145263732,
         "scripts": {
             "excludes": [
                 "**/Editor/",
@@ -212,6 +212,7 @@
             "enabled": false
         },
         "playerPrefs": true,
+        "enableStaticBatching": false,
         "enableDynamicBatching": false,
         "forceSourcesBasedCompilation": false
     },
@@ -271,7 +272,8 @@
             },
             "animations": {
                 "default": {
-                    "halfPrecision": true
+                    "halfPrecision": true,
+                    "stripCurves": true
                 },
                 "overrides": []
             }

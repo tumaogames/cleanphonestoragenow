@@ -59,6 +59,8 @@ script.
             const frameSample = app.counters.previous;
             const totalFrameTime = frameSample.times.frame;
             console.log( `%c RealtimeShadowsEnabled: %c${ UnityEngine.Application.isRealtimeShadowsEnabled }`, lablColor, descColor );
+            console.log( `%c StaticBatching: %c${ pc.ProjectSettings.instance.enableStaticBatching }`, lablColor, descColor );
+            console.log( `%c StaticBatchCount: %c${ pc.StaticMeshCombiner.instance.batchCount }`, lablColor, descColor );
             console.log( `%c DynamicBatching: %c${ pc.ProjectSettings.instance.enableDynamicBatching }`, lablColor, descColor );
 
             const GraphicsConstraints = {
