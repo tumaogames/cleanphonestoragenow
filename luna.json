@@ -80,8 +80,8 @@
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "17.14",
-            "monoVersion": "9.0.7",
+            "msbuildVersion": "17.13",
+            "monoVersion": "9.0.4",
             "dotnetVersion": ""
         },
         "assets": {
@@ -125,7 +125,8 @@
                 "Stubs/MoreMountains.NiceVibrations"
             ],
             "includes": [
-                "Assets/Resources/DOTweenSettings.asset"
+                "Assets/Resources/DOTweenSettings.asset",
+                "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
         },
         "scenes": [
