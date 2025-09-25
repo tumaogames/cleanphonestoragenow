@@ -1,0 +1,182 @@
+[ error ] $Failed to get user data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+[ error ] $Failed to get Creatives data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+[ error ] $Failed to get user data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+[ error ] $Failed to get user data from Playground:
+ RequestFailedException : 401 
+ Response: You need to sign in or sign up before continuing. 
+ Error: HTTP/1.1 401 Unauthorized  
+
+[ error ] $Failed to get user data from Playground:
+ System.NullReferenceException: Object reference not set to an instance of an object
+  at  . ‶.  () [0x00089] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0  
+
+[ error ] $Failed to get Creatives data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+report@config:load 5.73
+Authorized using stored user info.
+report@account:authorize 7.04
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity......
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 3063.85
+report@config:load 11.31
+Using D:/UnityProjects/CleanPhoneStorageNow_BeforeAndAfter/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[66672] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at D:/UnityProjects/CleanPhoneStorageNow_BeforeAndAfter/LunaTemp/stage1/tmp/fonts/LiberationSans-66672/output_0.png (56kb)
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Resources:
+{}
+report@assets:stage2 1789.01
+report@assets:stage3 150.87
+[ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.14
+report@config:load 2.51
+report@config:unity 0.05
+report@code:compose 142.29
+Authorized using stored user info.
+report@account:authorize 7.72
+MSBuild version 17.13.19+0d9f5a35a for .NET Framework
+
+Build started 9/25/2025 4:11:43 PM.
+
+
+
+Project "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
+CoreClean:
+  Deleting file "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_61 /highentropyva+ /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCo
+mpiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\AudioChannel.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\AudioLibrary.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\AudioManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\Core\Events\EventAggregator.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\Core\Events\GameEvent.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\Core\Services\IAudioService.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\Core\Services\IUIManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\AudioManager\Scripts\Core\Services\ServicesLocator.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ButtonPulse.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\CameraAspectFitter.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\CanvasGroupAnimator.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\DragToResizeLeft.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\FloatingTextEffect.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\FluidGridLayout.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\HorizontalUIDragClamp.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ObjectPoolingManager\Bullet.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ObjectPoolingManager\IPooledObject.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ObjectPoolingManager\ObjectPoolManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ObjectPoolingManager\Spawner.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\PromtPopUp.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ResponsiveUIManager\OrientationLayoutSwitcher.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ResponsiveUIManager\ResponsiveUIManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\StartClickHandler.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\TaskManager\TaskManager.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\TaskManager\TaskSequencePool.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\TaskManager\TaskSequencePro.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\UIDragger.cs D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\UIFollower.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\FluidGridLayout.cs(521,20): warning CS0108: 'FluidGridLayout.SetDirty()' hides inherited member 'LayoutGroup.SetDirty()'. Use the new keyword if hiding was intended. [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ResponsiveUIManager\OrientationLayoutSwitcher.cs(32,10): warning CS0108: 'OrientationLayoutSwitcher.Handle(ScreenOrientation)' hides inherited member 'Component<Component>.Handle'. Use the new keyword if hiding was intended. [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ButtonPulse.cs(8,36): warning CS0649: Field 'ButtonPulse.scaleMultiplier' is never assigned to, and will always have its default value 0 [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ButtonPulse.cs(9,36): warning CS0649: Field 'ButtonPulse.pulseDuration' is never assigned to, and will always have its default value 0 [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Creating "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" because "AlwaysCreate" was specified.
+
+  Touching "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Copying file from "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" to "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)).
+
+
+
+Build succeeded.
+
+
+
+"D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+  D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\FluidGridLayout.cs(521,20): warning CS0108: 'FluidGridLayout.SetDirty()' hides inherited member 'LayoutGroup.SetDirty()'. Use the new keyword if hiding 
+was intended. [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ResponsiveUIManager\OrientationLayoutSwitcher.cs(32,10): warning CS0108: 'OrientationLayoutSwitcher.Handle(ScreenOrientation)' hides inherited member 'Component<Component>.Handle'. Use the new keyword if hiding was intended. [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ButtonPulse.cs(8,36): warning CS0649: Field 'ButtonPulse.scaleMultiplier' is never assigned to, and will always have its default value 0 [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\LunaTemp\stage3\processed-scripts\Assets\Scripts\ButtonPulse.cs(9,36): warning CS0649: Field 'ButtonPulse.pulseDuration' is never assigned to, and will always have its default value 0 [D:\UnityProjects\CleanPhoneStorageNow_BeforeAndAfter\Playworks\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    4 Warning(s)
+    0 Error(s)
+
+
+Time Elapsed 00:00:12.36
+
+Source code compiled successfully!
+﻿
+[ error ] $﻿
+PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
+
+Diagnostics gathered successfully
+report@code:build 20097.97
+report@diagnostics:verify 0.54
+report@diagnostics:upload 2554.23
+report@code:stage 10624.95
+[ Stage3 ] Code compiled and bundled successfully.
+report@code:bundle 33434.07
+report@package:stage 2314.55
+[ Stage4 ] Target platform: develop
+[ Stage4 ] Package bundled successfully
+report@assets:stats 0.19
