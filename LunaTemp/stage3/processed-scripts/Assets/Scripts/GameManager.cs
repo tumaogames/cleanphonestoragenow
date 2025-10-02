@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject endPanel_L;
     public bool end;
     public GameObject hand;
+    public GameObject hand2;
     public GameObject arrow;
     public GameObject prompt;
     public GameObject prompt_L;
@@ -75,7 +76,8 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator Win_P()
     {
-        yield return new WaitForSeconds(3);
+        CTAClicked();
+        yield return new WaitForSeconds(3f);
         endPanel.SetActive(true);
         endPanel.GetComponent<CanvasGroupAnimator>().TriggerAnimate();
         end = true;
@@ -83,15 +85,27 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator Win_P_Short()
     {
-        yield return new WaitForSeconds(1);
+        CTAClicked();
+        yield return new WaitForSeconds(1f);
         endPanel.SetActive(true);
         endPanel.GetComponent<CanvasGroupAnimator>().TriggerAnimate();
+        Debug.Log("inside p");
+        end = true;
+    }
+
+    public IEnumerator Win_L_Short()
+    {
+        CTAClicked();
+        yield return new WaitForSeconds(1f);
+        endPanel_L.SetActive(true);
+        endPanel_L.GetComponent<CanvasGroupAnimator>().TriggerAnimate();
         end = true;
     }
 
     public IEnumerator Win_L()
     {
-        yield return new WaitForSeconds(3);
+        CTAClicked();
+        yield return new WaitForSeconds(3f);
         endPanel_L.SetActive(true);
         endPanel_L.GetComponent<CanvasGroupAnimator>().TriggerAnimate();
         end = true;

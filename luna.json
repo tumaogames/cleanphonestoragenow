@@ -1,8 +1,8 @@
 {
     "version": "6.4.0",
     "projectId": "25cf7bcc16a03234c9bd68200ba66e30",
-    "applicationID": 30032,
-    "creativeName": "",
+    "applicationID": 33357,
+    "creativeName": "Before-and-After_Sip",
     "pgServer": "EU",
     "window": {
         "‐′": true
@@ -11012,7 +11012,7 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -11042,7 +11042,7 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getDefaultValue",
@@ -11050,7 +11050,7 @@
                     },
                     {
                         "name": "Current#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IEnumerator$Current#get",
@@ -11070,7 +11070,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -11078,11 +11078,11 @@
                     },
                     {
                         "name": "moveNext",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Dispose",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IEnumerator$reset",
@@ -12226,7 +12226,7 @@
                     },
                     {
                         "name": "remove",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -20024,7 +20024,7 @@
                     },
                     {
                         "name": "OnDidApplyAnimationProperties",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20842,7 +20842,7 @@
                     },
                     {
                         "name": "OnDestroy",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20956,7 +20956,7 @@
                     },
                     {
                         "name": "isValid#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -21932,7 +21932,7 @@
                     },
                     {
                         "name": "raycastTarget#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#get",
@@ -25568,10 +25568,14 @@
                     },
                     {
                         "name": "Win_P_Short",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Win_L",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Win_L_Short",
                         "excluded": false
                     }
                 ]
@@ -25605,10 +25609,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "IsDragValid",
-                        "excluded": false
-                    },
-                    {
                         "name": "ClampWithinParentHorizontal",
                         "excluded": false
                     },
@@ -25634,6 +25634,22 @@
                     },
                     {
                         "name": "ComputeEffectivePaddingsLocal",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnPointerDown",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsPointerOnSelfOrChild",
                         "excluded": false
                     }
                 ]
@@ -28922,7 +28938,7 @@
                     },
                     {
                         "name": "rectTransform$1#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mesh#get",
@@ -30506,15 +30522,19 @@
                 "instanceMethods": [
                     {
                         "name": "Start",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EndGame",
-                        "excluded": true
+                        "excluded": false
+                    },
+                    {
+                        "name": "EndGam_L",
+                        "excluded": false
                     }
                 ]
             },
@@ -33070,7 +33090,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -33109,16 +33129,20 @@
                         "excluded": false
                     },
                     {
-                        "name": "ApplyToGraphic",
-                        "excluded": false
-                    },
-                    {
                         "name": "RememberOriginal",
                         "excluded": false
                     },
                     {
                         "name": "RestoreAll",
-                        "excluded": true
+                        "excluded": false
+                    },
+                    {
+                        "name": "ApplyToGraphicReplacing",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RemoveAppliedIfAny",
+                        "excluded": false
                     }
                 ]
             }

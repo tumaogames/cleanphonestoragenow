@@ -27,4 +27,17 @@ public class SIPChecker_P : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void EndGam_L()
+    {
+        if (GameManager.Instance.isSIP)
+        {
+            Debug.Log("SIP_L");
+            StartCoroutine(GameManager.Instance.Win_L_Short());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }

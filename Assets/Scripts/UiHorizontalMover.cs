@@ -25,6 +25,14 @@ public class UIHorizontalMover : MonoBehaviour
     [ContextMenu("Move To Right Edge")]
     public void MoveToRightEdge()
     {
+        if (GameManager.Instance.hand.activeInHierarchy)
+        {
+            GameManager.Instance.hand.SetActive(false);
+        }
+        if (GameManager.Instance.hand2.activeInHierarchy)
+        {
+            GameManager.Instance.hand2.SetActive(false);
+        }
         if (parentRt == null) return;
 
         // World corners of parent

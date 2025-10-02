@@ -31,8 +31,12 @@ public class MaskProBuiltIn : MonoBehaviour
     public bool invert = false;
 
     [Header("Writer")]
-    [Tooltip("If OFF, the writer will not write color (stencil only).")]
+    [Tooltip("If OFF, the writer will not write color (stencil-only).")]
     public bool writerVisible = false;
+
+    [Header("Writer Input")]
+    [Tooltip("If FALSE (default), the writer ignores raycasts so it won't steal clicks from draggable siblings/handles.")]
+    public bool writerReceivesRaycasts = false;
 
     [Header("Order & Options")]
     public DrawOrderFix drawOrderFix = DrawOrderFix.MoveWriterBeforeTargets;
@@ -93,6 +97,16 @@ public class MaskProBuiltIn : MonoBehaviour
         OnDisable(); OnEnable();
     }
 
+#if UNITY_EDITOR
+    void OnValidate()
+    {
+        if (!isActiveAndEnabled) return;
+        if (Application.isPlaying) return;
+        // Re-apply in edit mode when values change
+        OnDisable(); OnEnable();
+    }
+#endif
+
     void Cache()
     {
         if (_writerGraphic == null) _writerGraphic = GetComponent<Graphic>();
@@ -124,8 +138,12 @@ public class MaskProBuiltIn : MonoBehaviour
     {
         if (role == Role.ReaderOnly || _writerGraphic == null) return;
 
-        var baseMat = _writerGraphic.materialForRendering; // built-in UI shader w/ stencil props
-        RememberOriginal(_writerGraphic, _writerGraphic.material);
+        // Remove any previously applied stencil instance on this graphic (hot re-apply safety)
+        RemoveAppliedIfAny(_writerGraphic);
+
+        // Use the assigned material as base (prevents double-stenciling from materialForRendering).
+        var baseMat = _writerGraphic.material;
+        RememberOriginal(_writerGraphic, baseMat);
 
         // Writer: Op=Replace, Comp=Always. Color write can be Zero (hidden) or All (visible).
         var writerMat = UnityEngine.UI.StencilMaterial.Add(
@@ -133,20 +151,26 @@ public class MaskProBuiltIn : MonoBehaviour
             stencilRef,
             StencilOp.Replace,
             CompareFunction.Always,
-            writerVisible ? ColorWriteMask.All : 0, // 0 => no color writes
+            writerVisible ? ColorWriteMask.All : 0, // 0 => no color writes (invisible writer)
             readMask: 255,
             writeMask: 255
         );
 
-        ApplyToGraphic(_writerGraphic, writerMat);
+        ApplyToGraphicReplacing(_writerGraphic, writerMat);
 
-        // Ensure the writer does not block raycasts if it's only logical
-        if (!writerVisible)
+        // Raycast policy for the writer (so it won't steal clicks from draggables)
+        var cg = GetOrAdd<CanvasGroup>(_writerGraphic.gameObject);
+        if (!writerReceivesRaycasts)
         {
-            var cg = GetOrAdd<CanvasGroup>(_writerGraphic.gameObject);
+            _writerGraphic.raycastTarget = false;
             cg.blocksRaycasts = false;
             cg.interactable = false;
-            // IMPORTANT: Do NOT set alpha here (we already suppressed color via ColorWriteMask.Zero).
+        }
+        else
+        {
+            // Respect user's intent to interact with writer
+            cg.blocksRaycasts = true;
+            // don't change interactable; leave as-is
         }
     }
 
@@ -186,10 +210,13 @@ public class MaskProBuiltIn : MonoBehaviour
         {
             if (!g) continue;
 
+            // Remove any previously applied stencil instance on this reader (hot re-apply safety)
+            RemoveAppliedIfAny(g);
+
             RememberOriginal(g, g.material);
 
             // Reader: Op=Keep, Comp=Equal (or NotEqual if invert), Color writes on
-            var baseMat = g.materialForRendering;
+            var baseMat = g.material;
             var comp = invert ? CompareFunction.NotEqual : CompareFunction.Equal;
 
             var readerMat = UnityEngine.UI.StencilMaterial.Add(
@@ -202,7 +229,7 @@ public class MaskProBuiltIn : MonoBehaviour
                 writeMask: 255
             );
 
-            ApplyToGraphic(g, readerMat);
+            ApplyToGraphicReplacing(g, readerMat);
 
             if (disableMaskableOnReaders)
             {
@@ -239,18 +266,34 @@ public class MaskProBuiltIn : MonoBehaviour
             wc.sortingOrder = (_writerCanvas ? _writerCanvas.sortingOrder : 0) - 1;
 
             var cg = GetOrAdd<CanvasGroup>(_writerGraphic.gameObject);
-            cg.blocksRaycasts = false;
-            cg.interactable = false;
+            if (!writerReceivesRaycasts)
+            {
+                cg.blocksRaycasts = false;
+                cg.interactable = false;
+            }
         }
     }
 
     // ---------------- Material bookkeeping ----------------
 
-    void ApplyToGraphic(Graphic g, Material mat)
+    void ApplyToGraphicReplacing(Graphic g, Material mat)
     {
+        // If we had previously applied a stencil instance, free it before replacing
+        RemoveAppliedIfAny(g);
+
         _applied[g] = mat;
         g.material = mat;                 // assigns instance
         g.SetMaterialDirty();
+    }
+
+    void RemoveAppliedIfAny(Graphic g)
+    {
+        if (g == null) return;
+        if (_applied.TryGetValue(g, out var prev) && prev)
+        {
+            UnityEngine.UI.StencilMaterial.Remove(prev);
+            _applied.Remove(g);
+        }
     }
 
     void RememberOriginal(Graphic g, Material orig)
@@ -273,7 +316,6 @@ public class MaskProBuiltIn : MonoBehaviour
                 g.SetMaterialDirty();
             }
 
-            // Free the stencil instance properly
             if (inst)
                 UnityEngine.UI.StencilMaterial.Remove(inst);
         }
