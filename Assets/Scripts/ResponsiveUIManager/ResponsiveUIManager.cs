@@ -407,7 +407,7 @@ public sealed class ResponsiveUIManager : MonoBehaviour
             // Use array API with includeInactive overload (works across runtimes)
             bool interactive = img.transform.GetComponentsInParent<Selectable>(true).Length > 0;
 
-            if (!interactive && img.raycastTarget) img.raycastTarget = false;
+            //if (!interactive && img.raycastTarget) img.raycastTarget = false;
         }
     }
 
